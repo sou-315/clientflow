@@ -1,0 +1,134 @@
+.lead-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(24, 56, 47, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.lead-modal {
+  background: #FFFFFF;
+  border-radius: 14px;
+  width: 400px;
+  max-width: 90vw;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(24, 56, 47, 0.2);
+}
+
+.lead-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.lead-modal__header h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #18382F;
+  margin: 0;
+}
+
+.lead-modal__close {
+  background: none;
+  border: none;
+  color: #4B5F5A;
+  cursor: pointer;
+  display: flex;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.lead-modal__close:hover {
+  background: #F5F7F6;
+}
+
+.lead-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lead-modal__form label {
+  font-size: 13px;
+  color: #4B5F5A;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.lead-modal__form input,
+.lead-modal__form select {
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #D4DAD8;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1A1F27;
+  outline: none;
+}
+
+.lead-modal__form input:focus,
+.lead-modal__form select:focus {
+  border-color: #489159;
+}
+
+.lead-modal__row {
+  display: flex;
+  gap: 12px;
+}
+
+.lead-modal__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lead-modal__error {
+  color: #B3453D;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.lead-modal__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.lead-modal__cancel {
+  flex: 1;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #D4DAD8;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #4B5F5A;
+  cursor: pointer;
+}
+
+.lead-modal__cancel:hover {
+  background: #F5F7F6;
+}
+
+.lead-modal__submit {
+  flex: 1;
+  height: 38px;
+  background: #489159;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FCFDFC;
+  cursor: pointer;
+}
+
+.lead-modal__submit:hover {
+  background: #3C7A4A;
+}
+
+.lead-modal__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

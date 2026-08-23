@@ -1,0 +1,122 @@
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  margin-top: -60px;
+}
+.login-card__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1A1F27;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.login-card__subtitle {
+  font-size: 15px;
+  color: #4B5F5A;
+  margin: 0 0 32px;
+  text-align: center;
+}
+.login-card__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card__form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1F27;
+  margin-bottom: 8px;
+}
+
+.login-card__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-card__input-icon {
+  position: absolute;
+  left: 14px;
+  color: #4B5F5A;
+}
+
+.login-card__input-wrapper input {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border: 1px solid #D4DAD8;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease;
+  background-color: #FFFFFF;
+  color: #1A1F27;
+}
+
+.login-card__input-wrapper input::placeholder {
+  color: #8A9490;
+}
+
+.login-card__input-wrapper input:focus {
+  border-color: #489159;
+}
+
+.login-card__toggle-password {
+  position: absolute;
+  right: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4B5F5A;
+  display: flex;
+  align-items: center;
+}
+
+.login-card__error {
+  color: #C0392B;
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+.login-card__submit {
+  background-color: #489159;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.login-card__submit:hover:not(:disabled) {
+  background-color: #3C7A4A;
+}
+
+.login-card__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-card__switch {
+  text-align: center;
+  font-size: 14px;
+  color: #4B5F5A;
+  margin-top: 24px;
+}
+
+.login-card__switch a {
+  color: #489159;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-card__input-wrapper input:-webkit-autofill,
+.login-card__input-wrapper input:-webkit-autofill:hover,
+.login-card__input-wrapper input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+  -webkit-text-fill-color: #1A1F27;
+  transition: background-color 5000s ease-in-out 0s;
+}

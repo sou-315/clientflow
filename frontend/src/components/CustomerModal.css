@@ -1,0 +1,143 @@
+.customer-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(24, 56, 47, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.customer-modal {
+  background: #FFFFFF;
+  border-radius: 14px;
+  width: 400px;
+  max-width: 90vw;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(24, 56, 47, 0.2);
+}
+
+.customer-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.customer-modal__header h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #18382F;
+  margin: 0;
+}
+
+.customer-modal__close {
+  background: none;
+  border: none;
+  color: #4B5F5A;
+  cursor: pointer;
+  display: flex;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.customer-modal__close:hover {
+  background: #F5F7F6;
+}
+
+.customer-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.customer-modal__form label {
+  font-size: 13px;
+  color: #4B5F5A;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.customer-modal__form input,
+.customer-modal__form textarea {
+  padding: 0 12px;
+  border: 1px solid #D4DAD8;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1A1F27;
+  outline: none;
+  font-family: inherit;
+}
+
+.customer-modal__form input {
+  height: 38px;
+}
+
+.customer-modal__form textarea {
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.customer-modal__form input:focus,
+.customer-modal__form textarea:focus {
+  border-color: #489159;
+}
+
+.customer-modal__row {
+  display: flex;
+  gap: 12px;
+}
+
+.customer-modal__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-modal__error {
+  color: #B3453D;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.customer-modal__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.customer-modal__cancel {
+  flex: 1;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #D4DAD8;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #4B5F5A;
+  cursor: pointer;
+}
+
+.customer-modal__cancel:hover {
+  background: #F5F7F6;
+}
+
+.customer-modal__submit {
+  flex: 1;
+  height: 38px;
+  background: #489159;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FCFDFC;
+  cursor: pointer;
+}
+
+.customer-modal__submit:hover {
+  background: #3C7A4A;
+}
+
+.customer-modal__submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

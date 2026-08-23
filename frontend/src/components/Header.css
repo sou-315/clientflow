@@ -1,0 +1,234 @@
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background-color: #FCFDFC;
+  border-bottom: 1px solid #D4DAD8;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(212, 218, 216, 0.35);
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: 320px;
+  max-width: 100%;
+}
+
+.header__search-icon {
+  color: #4B5F5A;
+  flex-shrink: 0;
+}
+
+.header__search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  color: #1A1F27;
+}
+
+.header__search input::placeholder {
+  color: #4B5F5A;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__icon-btn {
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #4B5F5A;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.header__icon-btn:hover {
+  background-color: rgba(24, 56, 47, 0.06);
+}
+
+.header__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #489159;
+  color: #FCFDFC;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 1px 5px;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.header__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #A3C3AA;
+  color: #18382F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.header__user-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.header__user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A1F27;
+}
+
+.header__user-role {
+  font-size: 12px;
+  color: #4B5F5A;
+}
+.header__user-wrapper {
+  position: relative;
+}
+
+.header__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: #FCFDFC;
+  border: 1px solid #D4DAD8;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  min-width: 140px;
+  padding: 6px;
+  z-index: 20;
+}
+
+.header__menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1A1F27;
+  cursor: pointer;
+  text-align: left;
+}
+
+.header__menu-item:hover {
+  background-color: rgba(24, 56, 47, 0.06);
+}
+.header__notif-wrapper {
+  position: relative;
+}
+
+.header__notif-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: #FCFDFC;
+  border: 1px solid #D4DAD8;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 340px;
+  max-height: 420px;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.header__notif-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #EDEFEE;
+  font-size: 14px;
+  font-weight: 700;
+  color: #18382F;
+}
+
+.header__notif-mark-all {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #489159;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header__notif-mark-all:hover {
+  text-decoration: underline;
+}
+
+.header__notif-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.header__notif-empty {
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #4B5F5A;
+}
+
+.header__notif-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-bottom: 1px solid #EDEFEE;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.header__notif-item:hover {
+  background-color: #F5F7F6;
+}
+
+.header__notif-item--unread {
+  background-color: #EAF5EC;
+}
+
+.header__notif-item--unread:hover {
+  background-color: #DEF0E1;
+}
+
+.header__notif-message {
+  font-size: 13px;
+  color: #1A1F27;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.header__notif-date {
+  font-size: 11px;
+  color: #4B5F5A;
+}

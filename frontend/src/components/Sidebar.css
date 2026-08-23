@@ -1,0 +1,136 @@
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0D2F26 0%, #18382F 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  transition: width 0.2s ease, min-width 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar--collapsed {
+  width: 76px;
+  min-width: 76px;
+  padding: 24px 12px;
+}
+
+.sidebar__decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sidebar__decor--circle-1 {
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  bottom: -90px;
+  left: -80px;
+}
+
+.sidebar__decor--circle-2 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: 40px;
+  right: -70px;
+}
+
+.sidebar__decor--dots {
+  top: 220px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px);
+  background-size: 12px 12px;
+}
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px 24px 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar__brand-icon {
+  color: #489159;
+  flex-shrink: 0;
+}
+
+.sidebar__brand-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FCFDFC;
+  white-space: nowrap;
+}
+
+.sidebar__brand-accent {
+  color: #489159;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #D4DAD8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar__link:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #FCFDFC;
+}
+
+.sidebar__link--active {
+  background-color: #489159;
+  color: #FCFDFC;
+}
+
+.sidebar__link-icon {
+  flex-shrink: 0;
+}
+
+.sidebar__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  color: #A3C3AA;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar__toggle:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #FCFDFC;
+}
