@@ -12,6 +12,10 @@
         }
     ],
     "require": {
+        "php": "^8.3",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-zip": "*",
         "firebase/php-jwt": "^7.1"
     },
     "require-dev": {
