@@ -16,4 +16,4 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 COPY . .
 
 # Render sets $PORT automatically; default to 10000 for local docker testing
-CMD ["sh", "-c", "php -S 0.0.0.0:${PORT:-10000} -t public"]
+CMD ["sh", "-c", "php -d display_errors=1 -d error_reporting=E_ALL -S 0.0.0.0:${PORT:-10000} -t public"]
