@@ -35,3 +35,5 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+clientflow_dump.sql
+clientflow_dump.sql.bak
