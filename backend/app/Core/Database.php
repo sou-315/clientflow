@@ -8,13 +8,24 @@ class Database
     public static function getConnection(): PDO
     {
         if (self::$instance === null) {
-            $envFile = getenv('APP_ENV') === 'testing' ? '.env.testing' : '.env';
-            $env = parse_ini_file(__DIR__ . '/../../' . $envFile);
-            $host = $env['DB_HOST'];
-            $port = $env['DB_PORT'];
-            $dbname = $env['DB_NAME'];
-            $user = $env['DB_USER'];
-            $pass = $env['DB_PASS'];
+            // Try real environment variables first (used in production, e.g. Render).
+            $host = getenv('DB_HOST');
+            $port = getenv('DB_PORT');
+            $dbname = getenv('DB_NAME');
+            $user = getenv('DB_USER');
+            $pass = getenv('DB_PASS');
+
+            // Fall back to a local .env file if any of the above aren't set (local development).
+            if (!$host || !$port || !$dbname || !$user || $pass === false) {
+                $envFile = getenv('APP_ENV') === 'testing' ? '.env.testing' : '.env';
+                $env = parse_ini_file(__DIR__ . '/../../' . $envFile);
+                $host = $env['DB_HOST'] ?? $host;
+                $port = $env['DB_PORT'] ?? $port;
+                $dbname = $env['DB_NAME'] ?? $dbname;
+                $user = $env['DB_USER'] ?? $user;
+                $pass = $env['DB_PASS'] ?? $pass;
+            }
+
             try {
                 self::$instance = new PDO(
                     "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4",
@@ -29,7 +40,6 @@ class Database
         }
         return self::$instance;
     }
-
     public static function reset(): void
     {
         self::$instance = null;
