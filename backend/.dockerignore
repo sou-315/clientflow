@@ -1,0 +1,6 @@
+vendor/
+tests/
+.env
+.env.testing
+*.sql
+.git
