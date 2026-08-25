@@ -20,6 +20,7 @@ ClientFlow was built as an end-to-end learning and portfolio project: a custom P
 - **Activities** — a logged history of calls, meetings, emails, notes, and follow-ups, linkable to a lead, customer, or deal.
 - **Tasks** — assignable to-dos with priority, due dates, and status tracking (Pending / In Progress / Done), with inline status updates.
 - **Notifications** — in-app notifications surfaced in the top bar.
+- **Audit Log** — a full change history (created/updated/deleted) per record, with action/module filters and a detail view showing the exact field values at the time of the change.
 - **Search** across every module.
 - **Filtering & sorting** tailored per module (status, priority, industry, type, date).
 - **Pagination** on all list views.
@@ -31,12 +32,28 @@ ClientFlow was built as an end-to-end learning and portfolio project: a custom P
 
 ## 3. Screenshots
 
-<!-- Add screenshots here, e.g.: -->
-<!-- ![Dashboard](./docs/screenshots/dashboard.png) -->
-<!-- ![Leads list](./docs/screenshots/leads.png) -->
-<!-- ![Deal detail panel](./docs/screenshots/deal-detail-panel.png) -->
-
-*(Screenshots of the Dashboard, a list page, and a detail panel go here.)*
+| Feature | Screenshot |
+|---|---|
+| Login | ![Login](./docs/screenshots/01-login.png) |
+| Dashboard (metrics, deals overview) | ![Dashboard top](./docs/screenshots/02a-dashboard-top.png) |
+| Dashboard (upcoming deals, recent activity) | ![Dashboard bottom](./docs/screenshots/02b-dashboard-bottom.png) |
+| Leads (search, filter, sort, pagination) | ![Leads](./docs/screenshots/03-leads.png) |
+| Lead detail panel | ![Lead detail](./docs/screenshots/03b-lead-detail.png) |
+| Customers (bulk select) | ![Customers](./docs/screenshots/04-customers.png) |
+| Customer detail panel (with activity timeline) | ![Customer detail](./docs/screenshots/04b-customer-detail.png) |
+| Companies (industry filter) | ![Companies](./docs/screenshots/05-companies.png) |
+| Company detail panel | ![Company detail](./docs/screenshots/05b-company-detail.png) |
+| Deals | ![Deals](./docs/screenshots/06-deals.png) |
+| Deal detail panel — view mode | ![Deal detail view](./docs/screenshots/09-deal-detail-view.png) |
+| Deal detail panel — edit mode | ![Deal detail edit](./docs/screenshots/10-deal-detail-edit.png) |
+| Activities (type filter, sort) | ![Activities](./docs/screenshots/07-activities.png) |
+| Activity detail panel | ![Activity detail](./docs/screenshots/07b-activity-detail.png) |
+| Tasks (priority & status pills) | ![Tasks](./docs/screenshots/08-tasks.png) |
+| Task detail panel | ![Task detail](./docs/screenshots/08b-task-detail.png) |
+| Creation modal (New Lead) | ![Create modal](./docs/screenshots/11-create-modal.png) |
+| CSV export | ![CSV export](./docs/screenshots/12-csv-export.png) |
+| Audit Log | ![Audit Log](./docs/screenshots/13-audit-log.png) |
+| Audit Log — change detail | ![Audit Log detail](./docs/screenshots/13b-audit-log-detail.png) |
 
 ## 4. Tech Stack
 
